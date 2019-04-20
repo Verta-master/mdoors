@@ -1068,6 +1068,7 @@ button {
 }
 .benefits {
   padding-top: 65px;
+  padding-bottom: 40px;
 }
 .benefits .title {
   text-align: center;
@@ -1094,4 +1095,176 @@ button {
 .benefits__list li span {
   font-size: 30px;
   color: #e7c63d;
+}
+.review {
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+.review__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.review__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 1px dashed #b4aa81;
+}
+.review__item:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.review__item:nth-child(2n) .review__icon {
+  margin-right: 0;
+  margin-left: 50px;
+}
+.review__item:nth-child(2n) .review__title {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.review__item:nth-child(2n) .review__title b {
+  margin-right: 0;
+  margin-left: 15px;
+}
+.review__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  height: 250px;
+  margin-right: 50px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 1px 4.95px 0.05px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 4.95px 0.05px rgba(0, 0, 0, 0.3);
+}
+.review__info {
+  width: 750px;
+}
+.review__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+.review__title b {
+  margin-right: 15px;
+  font-size: 24px;
+}
+.review__title time {
+  font-size: 18px;
+  color: #6d6d6d;
+  font-weight: 300;
+}
+.review__text {
+  position: relative;
+  width: 100%;
+  padding: 70px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #b2b2b2;
+}
+.review__text p {
+  margin-top: 0;
+  max-width: 570px;
+}
+.review__text::before,
+.review__text:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 17px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAARBAMAAAA1VnEDAAAAMFBMVEUAAABtbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW2TMiGpAAAAD3RSTlMA3RFm7ndVuyIziJnMRKrp5V63AAAAeklEQVQI122N2w1AQBBFL+IHHzqgAyVIVKATSlCCDrSgI4pAxCPX7N1fP2dzsmdmACDiKx5GdGyMkxgWbO3xTLmVQCJatavafdWIpyoXJ+SsysULOej/0q7bGNPFkYiA7IGMzLXSSeWlkyxeakn9I5atmjTa6WcQR+ADb+1RnYGYUKkAAAAASUVORK5CYII=');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.review__text::before {
+  top: 30px;
+  left: 40px;
+}
+.review__text:after {
+  bottom: 30px;
+  right: 40px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.footer {
+  background-color: #006192;
+}
+.footer .menu {
+  border-bottom: 0;
+  -webkit-box-shadow: 0px 5px 4.75px 0.25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 5px 4.75px 0.25px rgba(0, 0, 0, 0.6);
+}
+.footer__wrap {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  color: #fff;
+  text-align: center;
+}
+.footer__text {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer__phones {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #e6cc36;
+  font-size: 35px;
+  font-weight: 700;
+}
+.footer__phones a {
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__phones a:hover,
+.footer__phones a:active {
+  color: #fff;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__mail {
+  margin: 0;
+  font-size: 28px;
+}
+.footer__mail a {
+  font-weight: 700;
+  font-style: italic;
+  border-bottom: 1px solid #fff;
+}
+.footer__mail a:hover,
+.footer__mail a:active {
+  border-color: rgba(255, 255, 255, 0);
 }
