@@ -1,0 +1,28 @@
+.breadcrumbs {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+a.breadcrumbs__link {
+  margin-right: 5px;
+  position: relative;
+  
+  &::after {
+    content: "/";
+    margin-left: 5px;
+  }
+  
+  &:hover,
+  &:active {
+    color: @yellow;
+    
+    &::after {
+      color: #000;
+    }
+  }
+}
+
+span.breadcrumbs__link {
+  font-weight: 700;
+}
