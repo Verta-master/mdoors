@@ -1,5 +1,14 @@
 .catalog {
   min-width: 1200px;
+  
+  &--luke {
+    .catalog__img {
+      width: 310px;
+    }
+    .catalog__info {
+      width: ~"calc(100% - 350px)";
+    }
+  }
 }
 
 .catalog__list {
@@ -69,15 +78,13 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   color: #e7242e;
   font-weight: 700;
   
   img {
     margin-left: 10px;
     margin-right: 20px;
-    width: 39px;
-    height: auto;
   }
   p {
     width: 520px;
