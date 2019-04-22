@@ -1,0 +1,134 @@
+.info {
+  min-width: 1200px;
+}
+
+.info__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+.info__table {
+  border-collapse: separate;
+  border-spacing: 10px;
+  margin-bottom: 40px;
+  margin-left: -10px;
+  
+  th {
+    width: 200px;
+    padding: 3px;
+    font-size: 20px;
+    color: #fefefe;
+    background-color: #005bc1;
+    text-transform: uppercase;
+    
+    &:first-child {
+      width: 170px;
+    }
+  }
+  
+  td {
+    width: 200px;
+    padding: 3px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #a1cdff;
+  }
+  
+  .info__side {
+    width: 170px;
+    color: #fefefe;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: #005bc1;
+    
+    span {
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+    }
+  }
+  
+  a:hover,
+  a:active {
+    color: #fefefe;
+  }
+}
+
+.info__tick {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 900px;
+  margin-bottom: 17px;
+  margin-top: 40px;
+  
+  li {
+    width: 300px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 50px;
+    font-size: 20px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background-image: url(../img/icons/check.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.info__img {
+  width: 370px;
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.info__text {
+  width: ~"calc(100% - 405px)";
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+}
+
+.info__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.info__item {
+  width: 30%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.info__icon {
+  height: 50px;
+  margin-bottom: 20px;
+  
+  img {
+    display: block;
+    height: 100%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
