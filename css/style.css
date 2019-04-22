@@ -771,6 +771,10 @@ h2,
 .promo__door span {
   color: #c9222a;
 }
+.promo__door img {
+  width: 21px;
+  height: auto;
+}
 .promo__prev,
 .promo__next {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAZCAMAAADdclTDAAAAPFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQLyYwAAAAE3RSTlMAYVtZWmBeX1xdWKxo5GJt5mNxj7bfKwAAAFJJREFUGNN9z0kSgCAQQ1FARifU3P+uLv3ZyO5VqpImHHvAmzrJpE5mFWclhxq5Ortz8aqk4Wn8OWMT0JQ/VI4UJo0DkX2DsKQSVmCjj/3suoEXG4EDHDagcsIAAAAASUVORK5CYII=');
@@ -1446,6 +1450,12 @@ span.breadcrumbs__link {
 .catalog {
   min-width: 1200px;
 }
+.catalog--luke .catalog__img {
+  width: 310px;
+}
+.catalog--luke .catalog__info {
+  width: calc(100% - 350px);
+}
 .catalog__list {
   margin: 0;
   padding: 0;
@@ -1521,17 +1531,15 @@ span.breadcrumbs__link {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #e7242e;
   font-weight: 700;
 }
 .catalog__comment img {
   margin-left: 10px;
   margin-right: 20px;
-  width: 39px;
-  height: auto;
 }
 .catalog__comment p {
   width: 520px;
