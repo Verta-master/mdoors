@@ -6,6 +6,7 @@
 <!--  <meta  name="viewport" content="width=device-width,initial-scale=1">-->
   <title>металлические двери</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
         <img src="img/images/logo.png" alt="Logo">
         <strong>Недорогие металлические двери</strong>
       </div>
-      <a href="#" class="btn header__call">Обратный звонок</a>
+      <a data-fancybox data-src="#call" href="javascript:;" class="btn header__call">Обратный звонок</a>
       <div class="header__block">
         <a href="tel:+74951423063" class="header__phone">+7(495) 142-30-63</a>
         <span>многоканальный</span>
@@ -154,14 +155,14 @@
           <div class="offer__wrap">
             <div class="offer__info">
               <p>Бесплатный замер</p>
-              <a href="#" class="btn btn--blue offer__btn">Заказать</a>
+              <a data-fancybox data-src="#free" href="javascript:;" class="btn btn--blue offer__btn">Заказать</a>
             </div>
             <img src="img/images/techRule.png" alt="Бесплатный замер">
           </div>
           
           <div class="offer__manager">
             <p>Персональный менеджер</p>
-            <a href="#" class="btn offer__manager-btn">Связаться</a>
+            <a data-fancybox data-src="#order" href="javascript:;" class="btn offer__manager-btn">Связаться</a>
           </div>
         </section>
       </div>
@@ -299,8 +300,44 @@
     </div>
   </footer>
   
+  <!-- Modal windows -->
+  <div style="display: none;" id="free" class="modal">
+    <p class="modal__title">Вызов замерщика для бесплатного замера!</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Имя">
+      <input type="tel" class="form__input" placeholder="Телефон">
+      <input type="email" class="form__input" placeholder="Адрес">
+      <input type="checkbox" id="check" class="form__checkbox">
+      <label for="check" class="form__label">Даю согласие на обработку данных</label>
+      <button type="submit" class="btn form__btn">Отправить!</button>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Мы вам перезвоним!</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Имя">
+      <input type="tel" class="form__input" placeholder="Телефон">
+      <input type="checkbox" id="check2" class="form__checkbox">
+      <label for="check2" class="form__label">Даю согласие на обработку данных</label>
+      <button type="submit" class="btn form__btn">Отправить!</button>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="order" class="modal">
+    <p class="modal__title">Хотите сделать заказ?<span>Заполните форму и вам перезвонят.</span></p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Имя">
+      <input type="tel" class="form__input" placeholder="Телефон">
+      <input type="checkbox" id="check3" class="form__checkbox">
+      <label for="check3" class="form__label">Даю согласие на обработку данных</label>
+      <button type="submit" class="btn form__btn">Отправить!</button>
+    </form>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 
   <!-- Slider -->
   <script>

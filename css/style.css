@@ -1099,6 +1099,49 @@ h2,
 .form__input::placeholder {
   opacity: 0.5;
 }
+.form__btn {
+  width: 100%;
+  height: 45px;
+  font-size: 25px;
+  text-transform: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.form__checkbox {
+  display: none;
+}
+.form__label {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.form__label::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #c4c4c4;
+}
+.form__label::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 1px;
+  width: 15px;
+  height: 14px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAAARtJREFUKJGV0TFLnEEUheHHdbuAbUorq0kgYCHYGbFTGBLsDKRJaWkxjQQs5gekTJlORKdTloQkXboEwhR2JpBfoFYqm2K/lWElGz3VzDn3vZfLnRkOhx6imOo6DvBr5iFwTHUVH7vv+b3hmOoT/MBsZ73s3RN8jC8N+K7kcPjfyTHVR/iOhc76XHJ4DlMnx1R7+NSAf7Axzvsx1UFnvik5XE/wJ1jq3jdYLTlcjsMe1vAa32Kqc83U/S4ba7PkcNp27uMQL7CIrzHVFexgs6nbKzkcTa7Vx9sOhmdG55hvao5LDruTIPRKDj+RGq8FfzeN7+j2VDHVD9hqsgs8LTmc/Qu+PVXJ4RXe4wqnWJ4GMtq51TYGOOvWmaq/7w1aM3HLwvoAAAAASUVORK5CYII=');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.form__checkbox:checked + .form__label::after {
+  display: block;
+}
 .benefits {
   min-width: 1200px;
   padding-top: 55px;
@@ -1776,4 +1819,33 @@ span.breadcrumbs__link {
   width: auto;
   margin-left: auto;
   margin-right: auto;
+}
+.modal {
+  width: 370px;
+  max-width: 100%;
+  padding: 50px;
+  -webkit-box-shadow: 0px 2px 9.5px 0.5px rgba(0, 0, 0, 0.63);
+          box-shadow: 0px 2px 9.5px 0.5px rgba(0, 0, 0, 0.63);
+}
+.modal .form__input {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 15px;
+  border-radius: 0;
+  height: 45px;
+  border: 1px solid #c4c4c4;
+}
+.modal__title {
+  margin-top: 0;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+.modal__title span {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+.fancybox-is-open .fancybox-bg {
+  background-color: rgba(39, 91, 205, 0.8);
 }
